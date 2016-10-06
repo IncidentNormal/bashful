@@ -2,8 +2,8 @@
 #### Library of bash helpers, split by file according to subject matter.
 :octocat: [incidentnormal.github.io](https://incidentnormal.github.io)
 - - - -
-- [x] **.bashrc**
-- [x] **.bash_logout**
+- **.bashrc**
+- **.bash_logout**
 
 1. [x] *.bash_aliases*
 2. [x] *.bash_vpn*
