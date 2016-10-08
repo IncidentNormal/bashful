@@ -14,7 +14,7 @@
 | **4.** |  *.bash.d*                      | / | [**.bash_geo**](.bash.d/.bash_geo)                         | geocoding / geodecoding fn's        |
 | **5.** |  *.bash.d*                      | / | [**.bash_cp**](.bash.d/.bash_cp)                           | control system for all servers      |
 |        |  *.bash.d*                      | / | [**.iphosts**](.bash.d/.iphosts)                           | maintains list of details per host  |
-|        |  *expect*                       | / | [**ssh-copy-id.expect**](.bash.d/expect/ssh-copy-id.expect)| automates setup of new hosts        |
+|        |  *.bash.d/expect*               | / | [**ssh-copy-id.expect**](.bash.d/expect/ssh-copy-id.expect)| automates setup of new hosts        |
 | **6.** |  *.bash.d*                      | / | [**.bash_dns**](.bash.d/.bash_dns)                         | fn's to control Namecheap's DNS API |
 | **7.** |  *.bash.d*                      | / | [**.bash_stat**](.bash.d/.bash_stat)                       | fn's to interrogate the filesystem  |
 | **8.** |  *.bash.d*                      | / | [**.bash_dr**](.bash.d/.bash_dr)                           | an**dr**oid  control framework      |
