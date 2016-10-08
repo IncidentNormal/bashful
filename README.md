@@ -2,7 +2,7 @@
 #### Library of bash helpers, split by file according to subject matter.
 :octocat: [incidentnormal.github.io](https://incidentnormal.github.io)
 - - - -
-| **#**  |  ~/             | / |  ~/$1/                |  (very) short summary               |
+| **#**  |  ~/             |   |  ~/$1/                |  (very) short summary               |
 |--------|:---------------:|---|:---------------------:|:-----------------------------------:|
 |        |                 |   |                       |                                     |
 | **A.** |  **_.bashrc_**  |   |                       | master init file, calls the others  |
