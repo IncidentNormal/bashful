@@ -9,16 +9,16 @@ export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s", expor
 # Also: load at the start before line that prevents any config being loaded if not running interactively
 #
 if [ -d ~/.bash.d ]; then
-    . ~/.bash.d/.bash_aliases
-    . ~/.bash.d/.bash_stat
-    . ~/.bash.d/.bash_ssh
-    . ~/.bash.d/.bash_dns
-    . ~/.bash.d/.bash_geo
-    . ~/.bash.d/.bash_parse
-    . ~/.bash.d/.bash_vpn
-    . ~/.bash.d/.bash_cp
-    . ~/.bash.d/.bash_pb
-    . ~/.bash.d/.bash_dr
+    . ~/.bash.d/.aliases.bash
+    . ~/.bash.d/.stat.bash
+    . ~/.bash.d/.ssh.bash
+    . ~/.bash.d/.dns.bash
+    . ~/.bash.d/.geo.bash
+    . ~/.bash.d/.parse.bash
+    . ~/.bash.d/.vpn.bash
+    . ~/.bash.d/.cp.bash
+    . ~/.bash.d/.pb.bash
+    . ~/.bash.d/.dr.bash
 fi
 
 # If not running interactively, don't do anything

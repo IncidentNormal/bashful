@@ -1,4 +1,4 @@
-# ~/.bash.d/.bash_ssh
+# ~/.bash.d/.ssh.bash
 ###############################################################
 # Specifically containing ssh related login aliases
 ###############################################################

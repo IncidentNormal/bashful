@@ -1,6 +1,6 @@
-# ~/.bash.d/.bash_stat
+# ~/.bash.d/.stat.bash
 #########################################################################
-# >>>   .bash_stat							#
+# >>>   .stat.bash							#
 #-----------------------------------------------------------------------#
 # aliases & functions for parsing filesystem related output... 		#
 # + some general helper functions.					#

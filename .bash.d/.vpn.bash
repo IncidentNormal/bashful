@@ -1,10 +1,10 @@
-# ~/.bash.d/.bash_vpn
+# ~/.bash.d/.vpn.bash
 ###############################################################
 #!/bin/bash
 
 BASH_HOME=$HOME/.bash.d
-source $BASH_HOME/.bash_geo
-source $BASH_HOME/.bash_parse
+source $BASH_HOME/.geo.bash
+source $BASH_HOME/.parse.bash
 
 IPLOG_PATH="$HOME/.iplog"
 VPN_CONF_PATH="/etc/openvpn"

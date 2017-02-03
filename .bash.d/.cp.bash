@@ -1,6 +1,6 @@
-# ~/.bash.d/.bash_cp
+# ~/.bash.d/.cp.bash
 #########################################################################
-# >>>   .bash_cp                                                        #
+# >>>   .cp.bash                                                        #
 #-----------------------------------------------------------------------#
 # Helper functions to setup config on a new linux host with ssh access  #
 #########################################################################
@@ -164,13 +164,13 @@ echocmd() {
 
 insertNewBashImportLine() {
 	if [ "$#" -ne 1 ]; then
-		echo "Usage: insertNewBashImportLine <new .bash_??? filename>" && return 1
+		echo "Usage: insertNewBashImportLine <new .???.bash filename>" && return 1
 	fi
 	newFile="$1"
-	if [ "${newFile:0:6}" == '.bash_' ]; then
-		echocmd all "sed -i \"/.*\.bash_cp/a \ \ \ \ . ~\/.bash.d\/$newFile\" .bashrc"
+	if [ "${newFile: -5}" == '.bash' ]; then
+		echocmd all "sed -i \"/.*\.cp.bash/a \ \ \ \ . ~\/.bash.d\/$newFile\" .bashrc"
 	else
-		echo "Invalid filename for import ($newFile) - must start with .bash_" && return 1
+		echo "Invalid filename for import ($newFile) - must end with .bash" && return 1
 	fi
 }
 
@@ -190,9 +190,9 @@ insertNewSshAlias() {
 	fi
 
 	if [ "${broadcastToAllHosts}" -ne 1 ]; then
-		sed -i "/.*ceres.*/a # ${aliasComment}\nalias ${aliasName}='ssh -p ${sshPort} ${sshUserName}@${sshIpAddress}'" .bash.d/.bash_ssh
+		sed -i "/.*ceres.*/a # ${aliasComment}\nalias ${aliasName}='ssh -p ${sshPort} ${sshUserName}@${sshIpAddress}'" .bash.d/.ssh.bash
 	else
-		echocmd all "sed -i \"/.*ceres.*/a # ${aliasComment}\nalias ${aliasName}='ssh -p ${sshPort} ${sshUserName}@${sshIpAddress}'\" .bash.d/.bash_ssh"
+		echocmd all "sed -i \"/.*ceres.*/a # ${aliasComment}\nalias ${aliasName}='ssh -p ${sshPort} ${sshUserName}@${sshIpAddress}'\" .bash.d/.ssh.bash"
 	fi
 }
 
